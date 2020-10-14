@@ -8,7 +8,8 @@ function App() {
 <div className="demo-big-content">
     <Layout>
         <Header className="header-color" title="My Portfolio" scroll>
-            <Navigation>
+          <Navigation>
+              <Link to="/">Home</Link>
                 <Link to="/aboutme">About Me</Link>
                 <Link to="/projects">Projects</Link>
                 <Link to="/contact">Contact</Link>
@@ -16,6 +17,7 @@ function App() {
         </Header>
         <Drawer title="My Portfolio">
             <Navigation>
+            <Link to="/">Home</Link>
                 <Link to="/aboutme">About Me</Link>
                 <Link to="/projects">projects</Link>
                 <Link to="/contact">Contact</Link>
