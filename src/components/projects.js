@@ -8,26 +8,26 @@ class Projects extends Component {
   }
   toggleCategories() {
     if (this.state.activeTab === 0) {
-      return (
-        <Card shadow={5} style={{ minWidth: "450", margin: "auto", paddingTop: "5px" }}>
-          <CardTitle
-            style={{
-              color: "#fff",
-              height: "176px",
-              background: "url(https://www.inovex.de/blog/wp-content/uploads/2022/01/one-year-of-react-native.png) center / cover",
-            }}
-          ></CardTitle>
-          <CardText>Food banks have responded to increased demand by serving clients through drive-up mobile sites: people who need food can drive to a particular location, where workers and volunteers will load bagged groceries into their backseats or trunks.</CardText>
-          <CardActions border>
-            <Button href="https://github.com/rmcmahon91/Food-Bank-Analysis" colored>Github</Button>
-            <Button href= "https://food-bank-project.herokuapp.com/" colored>Link</Button>
-          </CardActions>
-          <CardMenu style={{ color: "#fff" }}>
-            <IconButton name="share" />
-          </CardMenu>
-        </Card>
+      // return (
+      //   // <Card shadow={5} style={{ minWidth: "450", margin: "auto", paddingTop: "5px" }}>
+      //   //   <CardTitle
+      //   //     style={{
+      //   //       color: "#fff",
+      //   //       height: "176px",
+      //   //       background: "url(https://www.inovex.de/blog/wp-content/uploads/2022/01/one-year-of-react-native.png) center / cover",
+      //   //     }}
+      //   //   ></CardTitle>
+      //   //   <CardText>Food banks have responded to increased demand by serving clients through drive-up mobile sites: people who need food can drive to a particular location, where workers and volunteers will load bagged groceries into their backseats or trunks.</CardText>
+      //   //   <CardActions border>
+      //   //     <Button href="https://github.com/rmcmahon91/Food-Bank-Analysis" colored>Github</Button>
+      //   //     <Button href= "https://food-bank-project.herokuapp.com/" colored>Link</Button>
+      //   //   </CardActions>
+      //   //   <CardMenu style={{ color: "#fff" }}>
+      //   //     <IconButton name="share" />
+      //   //   </CardMenu>
+      //   // </Card>
         
-      );
+      // );
     } else if (this.state.activeTab === 1) {
         return (
           <div className="project-grid">
@@ -92,28 +92,28 @@ class Projects extends Component {
     }
   }
 
-  render() {
-    return (
-      <div className="category-tabs">
-        <Tabs
-          activeTab={this.state.activeTab}
-          onChange={(tabId) => this.setState({ activeTab: tabId })}
-          ripple
-        >
-          <Tab>React</Tab>
-          <Tab>Javascript</Tab>
-          <Tab>Nodejs</Tab>
-        </Tabs>
+  // render() {
+  //   return (
+  //     <div className="category-tabs">
+  //       <Tabs
+  //         activeTab={this.state.activeTab}
+  //         onChange={(tabId) => this.setState({ activeTab: tabId })}
+  //         ripple
+  //       >
+  //         <Tab>React</Tab>
+  //         <Tab>Javascript</Tab>
+  //         <Tab>Nodejs</Tab>
+  //       </Tabs>
 
-            <Grid>
-                <Cell col={12}>
-                <div className="content">{this.toggleCategories()}</div>
-                </Cell>
-            </Grid>
+  //           <Grid>
+  //               <Cell col={12}>
+  //               <div className="content">{this.toggleCategories()}</div>
+  //               </Cell>
+  //           </Grid>
         
-      </div>
-    );
-  }
+  //     </div>
+  //   );
+  // }
 }
 
 export default Projects;
